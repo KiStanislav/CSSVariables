@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  overflow: hidden;
+}
+
+:root {
+  --base: #ffc600;
+  --spacing: 10px;
+  --blur: 0px;
+  --grayscale: 0%;
+  --invert: 0%;
+  --saturate: 100%;
+  --hue-rotate: 0;
+  --sepia: 0%;
+}
+
+img {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur)) grayscale(var(--grayscale)) invert(var(--invert)) saturate(var(--saturate)) hue-rotate(var(--hue-rotate)) sepia(var(--sepia));
+  margin: 0 5%;
+}
+
+.hl {
+  color: var(--base);
+}
+
+h2 {
+  text-align: center;
+}
+
+body {
+  padding: 10px;
+  background-position: 50% 50%;
+  background-size: 100%;
+  background: #193549;
+  color: white;
+  font-family: "helvetica neue", sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.container {
+  margin: 0 100px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  /* overflow: auto; */
+  display: flex;
+  flex-direction: row;
+}
+
+.controls {
+  /* margin-bottom: 50px; */
+  display: flex;
+  flex-direction: column;
+  /* margin-right: 20% ; */
+}
+
+input {
+  width: 100px;
+}
