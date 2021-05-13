@@ -34,9 +34,9 @@ h2 {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   padding: 10px;
-  background-position: 50% 50%;
-  background-size: 100%;
   background: #193549;
   color: white;
   font-family: "helvetica neue", sans-serif;
@@ -49,18 +49,27 @@ body {
   align-items: center;
   align-content: center;
   justify-content: center;
-  /* overflow: auto; */
   display: flex;
   flex-direction: row;
 }
 
 .controls {
-  /* margin-bottom: 50px; */
   display: flex;
   flex-direction: column;
-  /* margin-right: 20% ; */
 }
 
 input {
-  width: 100px;
+  width: 90%;
+}
+
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    margin: 0;
+  }
+  .controls {
+    padding-right: 36%;
+    height: 195px;
+    flex-wrap: wrap
+  }
 }
