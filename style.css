@@ -23,6 +23,7 @@ img {
   background: var(--base);
   filter: blur(var(--blur)) grayscale(var(--grayscale)) invert(var(--invert)) saturate(var(--saturate)) hue-rotate(var(--hue-rotate)) sepia(var(--sepia));
   margin: 0 5%;
+  width: 100%;
 }
 
 .hl {
@@ -31,6 +32,7 @@ img {
 
 h2 {
   text-align: center;
+  margin-bottom: 5%;
 }
 
 body {
