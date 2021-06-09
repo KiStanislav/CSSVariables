@@ -23,7 +23,7 @@ img {
   background: var(--base);
   filter: blur(var(--blur)) grayscale(var(--grayscale)) invert(var(--invert)) saturate(var(--saturate)) hue-rotate(var(--hue-rotate)) sepia(var(--sepia));
   margin: 0 5%;
-  width: 100vmin;
+  width: 90vmin;
 }
 
 .hl {
@@ -47,7 +47,6 @@ body {
 }
 
 .container {
-  margin: 0 100px;
   align-items: center;
   align-content: center;
   justify-content: center;
@@ -68,14 +67,41 @@ input {
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
-    margin: 10%;
   }
   .controls {
     padding-right: 36%;
     height: 195px;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    margin: 80px 0;
   }
   h1 {
     margin-bottom: 0;
+  }
+}
+
+@media (max-width: 414px) {
+  .container {
+    margin: 40px 0;
+  }
+  .controls {
+    margin: 80px 0;
+  }
+}
+
+@media (max-width: 375px) {
+  h1 {
+    margin-top: 0;
+  }
+  .controls {
+    margin: 40px 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .controls {
+    margin: 15px;
+  }
+  .container {
+    margin: 30px 0;
   }
 }
