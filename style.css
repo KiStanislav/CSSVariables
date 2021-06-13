@@ -48,7 +48,6 @@ body {
 
 .container {
   align-items: center;
-  align-content: center;
   justify-content: center;
   display: flex;
   flex-direction: row;
@@ -91,6 +90,7 @@ input {
 @media (max-width: 375px) {
   h1 {
     margin-top: 0;
+    font-size: 3rem;
   }
   .controls {
     margin: 40px 0;
@@ -102,6 +102,6 @@ input {
     margin: 15px;
   }
   .container {
-    margin: 30px 0;
+    margin: 55px 0;
   }
 }
